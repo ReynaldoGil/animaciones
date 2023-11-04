@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos y Animaciones</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .text {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #f1c40f;
+            margin-bottom: 20px;
+        }
+
+        .animated-box {
+            animation: animation 1s linear infinite;
+        }
+
+        @keyframes animation {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(200px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores corporis nobis voluptate alias exercitationem doloribus et eveniet rem qui provident quod facere at dolorum dicta nesciunt aspernatur architecto deserunt, sed ea fugit consectetur accusamus voluptatem? Ipsam, rem? Sunt ullam nulla amet facilis quibusdam possimus quod at, numquam omnis sed perspiciatis iure quam quisquam minima, mollitia odit ut eveniet eius iusto pariatur commodi! Tenetur consectetur odio sed nemo rem natus quo corrupti exercitationem aliquam, expedita error dolor fuga voluptatibus impedit architecto?
+        </div>
+        <div class="box"></div>
+        <div class="text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus fuga cum officia pariatur voluptate eveniet sequi inventore rem quisquam maxime harum, libero odio placeat blanditiis, consectetur eaque nesciunt reprehenderit voluptatem nihil aliquid voluptas velit odit doloribus. Id possimus cupiditate dignissimos eveniet. Iste hic minus consequuntur in fugit sint porro voluptas commodi sequi, dolorem ut assumenda vel doloribus quis, ipsam odit error doloremque voluptates rem reprehenderit mollitia. Similique nisi odio nam ad veritatis fuga, unde exercitationem animi in illum tempore amet dolores cumque distinctio at! Illum, eos. Nesciunt quibusdam dolorum totam!
+        </div>
+        <div class="box animated-box"></div>
+    </div>
+</body>
+</html>
